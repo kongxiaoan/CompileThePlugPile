@@ -1,0 +1,3 @@
+rootProject.name='CompileThePlugPile'
+include ':app'
+include ':custom_log_plugin'
