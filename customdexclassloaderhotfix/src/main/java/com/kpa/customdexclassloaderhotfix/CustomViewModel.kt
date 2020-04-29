@@ -1,5 +1,7 @@
 package com.kpa.customdexclassloaderhotfix
 
+import androidx.lifecycle.ViewModel
+
 /**
  *    @projectName: CompileThePlugPile
  *    @ClassName : CustomViewModel
@@ -11,3 +13,5 @@ package com.kpa.customdexclassloaderhotfix
  *    @UpdateRemark : 更新说明
  *    version: 1.0
  */
+
+class CustomViewModel:ViewModel()

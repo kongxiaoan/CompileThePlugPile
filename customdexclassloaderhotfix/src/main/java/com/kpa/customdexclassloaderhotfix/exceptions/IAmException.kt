@@ -1,5 +1,7 @@
 package com.kpa.customdexclassloaderhotfix.exceptions
 
+import com.kpa.customdexclassloaderhotfix.interfaces.IAMInterface
+
 /**
  *    @projectName: CompileThePlugPile
  *    @ClassName : IAmException
@@ -11,5 +13,8 @@ package com.kpa.customdexclassloaderhotfix.exceptions
  *    @UpdateRemark : 更新说明
  *    version: 1.0
  */
-class IAmException {
+class IAmException: IAMInterface {
+    override fun doSomething(): String {
+        return "假装是一个异常"
+    }
 }

@@ -1,4 +1,4 @@
-package com.kpa.hotfix_lib.interfaces
+package com.kpa.customdexclassloaderhotfix.interfaces
 
 /**
  *    @projectName: CompileThePlugPile
@@ -11,6 +11,6 @@ package com.kpa.hotfix_lib.interfaces
  *    @UpdateRemark : 更新说明
  *    version: 1.0
  */
-interface IAmHotfixInterface {
+interface IAMInterface {
     fun doSomething(): String
 }

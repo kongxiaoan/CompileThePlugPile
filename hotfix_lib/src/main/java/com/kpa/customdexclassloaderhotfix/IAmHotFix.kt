@@ -1,8 +1,8 @@
-package com.kpa.hotfix_lib
+package com.kpa.customdexclassloaderhotfix
 
-import com.kpa.hotfix_lib.interfaces.IAmHotfixInterface
+import com.kpa.customdexclassloaderhotfix.interfaces.IAMInterface
 
-public class IAmHotFix: IAmHotfixInterface {
+public class IAmHotFix: IAMInterface {
     override fun doSomething(): String {
         return "我是修复好的"
     }

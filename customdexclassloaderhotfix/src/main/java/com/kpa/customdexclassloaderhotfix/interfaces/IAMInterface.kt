@@ -12,4 +12,5 @@ package com.kpa.customdexclassloaderhotfix.interfaces
  *    version: 1.0
  */
 interface IAMInterface {
+    fun doSomething(): String
 }

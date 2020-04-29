@@ -32,7 +32,7 @@ public class CustomClassVisitor extends ClassVisitor {
 
     @Override
     public MethodVisitor visitMethod(int access, String name, String descriptor, String signature, String[] exceptions) {
-        System.out.println("ClassVisitor visitMethod name--->" + name + ", superName" + superName);
+        System.out.println("ClassVisitor visitMethod name--->" + name + ", superName--->" + superName + ", className--->" + className + ", access--->" + access);
         MethodVisitor mv = cv.visitMethod(access, name, descriptor, signature, exceptions);
         if (superName.equals("androidx/appcompat/app/AppCompatActivity")) {
             if (name.startsWith("onCreate")) {

@@ -1,3 +1,5 @@
 rootProject.name='CompileThePlugPile'
 include ':app'
 include ':custom_log_plugin'
+include ':customdexclassloaderhotfix'
+include ':hotfix_lib'

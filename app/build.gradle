@@ -7,7 +7,7 @@ buildscript {
     repositories {
         google()
         jcenter()
-        maven { url '../custom_log_repo'}
+        maven { url '../custom_log_repo' }
     }
     dependencies {
         classpath 'kpa.custom.log.plugin:custom_log_plugin:1.0.3'
@@ -40,7 +40,13 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //                                       👇 依赖协程核心库
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0"
+    //                                       👇 依赖当前平台所对应的平台库
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0"
+
 }
